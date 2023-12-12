@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<style>
+header {
+padding: 1px;
+text-align: center;
+background: aliceblue;
+}
+.topnav {
+overflow: hidden;
+}
+.topnav a {
+float: left;
+color: navy;
+text-align: center;
+padding: 20px 20px;
+text-decoration: none;
+font-size: 20px;
+}
+.topnav a:hover {
+  color: blue;
+}
+.mySlides {
+display: none;
+}
+img {
+vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 10s ease;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+body {
+    background-color: #060c20; url(
+        https://assets.plesk.com/static/default-website-content/public/img/stars-fb15b6.svg) 50% 28px 
+        no-repeat;
+    background-image: url(https://assets.plesk.com/static/default-website-content/public/img/stars-fb15b6.svg);
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #060c20; 
+    background-size: 1760px 852px;
+    background-attachment: fixed;
+}
+</style>
+</head>
+<header>
+<!-- Right-sided navbar links -->
+<div class="topnav">
+    <a href="index.html"><img src="aa.png" width="20%" align="left"></a>
+      <a href="index.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="family.html"></i>FAMILY</a>
+      <a href="education.html"></i>EDUCATION</a>
+      <a href="hobby.html"></i>MY HOBBY</a>
+      <a href="gallery.html"></i>GALLERY</a>
+    </div>
+</header>
+<br>
+<body>
+<center>
+<h3 style="color:white">HI! WELCOME TO MY WEBSITE</h3>
+<div class="mySlides fade">
+<br>
+  <img src="g17.jpg" style="width:30%" align="center">
+</div>
+
+<div class="mySlides fade">
+  <img src="g21.jpg" style="width:30%" align="center">
+</div>
+
+<div class="mySlides fade">
+  <img src="g22.jpg" style="width:30%" align="center">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 5 seconds
+}
+</script>
+</body>
+<br>
+<footer>
+<td><a href="https://www.instagram.com/qynn.a"><img src="ig.png" width="30" height="30"></a></td>
+<td><a href="https://www.facebook.com/qynnn.a"><img src="fb.png" width="30" height="30"></a></td>
+<td><a href="https://www.snapchat.com/qynn.a"><img src="sc.png" width="30" height="30"></a></td>
+<td><a href="https://twitter.com/Qna_03"><img src="tt.png" width="30" height="30"></a></td>
+</tr>
+</footer>
+</html>
